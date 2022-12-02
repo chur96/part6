@@ -6,11 +6,11 @@ const notificationSlice = createSlice({
     reducers: {
         notify(state, action){
             const content = action.payload
+            state = ''
             return state.concat(content)
         },
         removeNotify(state, action){
-            state = ''
-            return state
+            return state = ''
         }
     }
 
